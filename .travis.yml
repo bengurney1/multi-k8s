@@ -17,7 +17,7 @@ after_success:
 # login to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # take images and push to docker hub
-  - docker push bengurney1/multi-client
-  - docker push bengurney1/multi-nginx
-  - docker push bengurney1/multi-server
-  - docker push bengurney1/multi-worker
+  - docker push bengurney/multi-client
+  - docker push bengurney/multi-nginx
+  - docker push bengurney/multi-server
+  - docker push bengurney/multi-worker
